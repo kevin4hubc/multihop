@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "kevin4hubc-multihop"
+version = "0.1.0"
+description = "抽取数值做分布分析，用中位数绝对偏差识别多跳检索的中间证据上的离群点"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { file = "LICENSE" }
+authors = [{ name = "kevin4hubc" }]
+keywords = ["analysis", "observability", "evaluation", "rag"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Environment :: Console",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "Topic :: Utilities",
+]
+
+[project.urls]
+Homepage = "https://kevin4hubc.github.io"
+Repository = "https://github.com/kevin4hubc/multihop"
+Issues = "https://github.com/kevin4hubc/multihop/issues"
+
+[project.scripts]
+multihop = "multihop:main"
+
+[tool.setuptools]
+py-modules = ["multihop"]
